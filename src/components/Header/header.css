@@ -1,0 +1,35 @@
+.header {
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: #f0f0f8;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  margin: 0;
+}
+
+.header .logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header .logo img {
+  height: 90%;
+}
+
+.header .logo span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+
+.header .chat-info span {
+  color: #070847;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}

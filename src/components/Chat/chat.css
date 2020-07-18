@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #1f1e1e;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}

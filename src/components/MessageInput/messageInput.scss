@@ -1,0 +1,26 @@
+.input-block {
+  margin: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  width: 100%;
+  min-width: 400px;
+
+  .input-area {
+    flex-basis: 75%;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 4px;
+  }
+
+  .input-send {
+    flex-basis: 20%;
+    padding: 5px 10px;
+    background-color: rgba(18, 116, 9, 0.842);
+    border-radius: 6px;
+    align-self: flex-start;
+    border: 1px solid rgb(135, 243, 135);
+    color: rgb(225, 250, 230);
+    font-size: 1.1rem;
+  }
+}

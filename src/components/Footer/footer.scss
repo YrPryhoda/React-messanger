@@ -1,0 +1,25 @@
+.footer-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f8;
+
+  span {
+    padding-left: 0.3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #020336;
+
+    &:hover {
+      color: rgb(24, 6, 126);
+      text-decoration: underline;
+    }
+  }
+}
