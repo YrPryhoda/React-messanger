@@ -5,6 +5,7 @@ import Header from "../Header";
 import Spinner from '../Spinner';
 import Footer from '../Footer';
 import EditMessage from '../EditMessage';
+import moment from 'moment';
 import { getState } from "../../service/data";
 import { v4 } from 'uuid';
 import "./chat.css";
@@ -13,7 +14,10 @@ function App() {
   const [state, setState] = useState(null);
   const [editedMsg, setEditedMsg] = useState(null);
   useEffect(() => {
-    getState().then(data => setState(data))
+    getState().then(data => {
+      const newArr = data.sort((a,b) => moment(a.createdAt, "hh:mm:ss") - moment(b.createdAt, "hh:mm:ss"));
+      setState(newArr);
+    })
   }, []);
   const sendMessage = (text) => {
     const obj = {
